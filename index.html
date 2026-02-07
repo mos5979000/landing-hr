@@ -1,83 +1,142 @@
 <!doctype html>
 <html lang="th">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>สมัคร / ติดต่อ</title>
-  <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto; background:#0b0b0b; color:#fff;}
-    .wrap{max-width:520px;margin:0 auto; padding:16px;}
-    .card{background:#141414;border-radius:18px; overflow:hidden; border:1px solid #222;}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>สมัคร / ติดต่อ</title>
 
-    /* ===== Slider ===== */
-    .slider{position:relative; width:100%; overflow:hidden; background:#000;}
-    .slide{
-      width:100%;
-      display:none;
-      aspect-ratio: 4 / 5;   /* ปรับให้เหมาะกับงานแอด (อยากเปลี่ยนได้) */
-      object-fit: cover;
-    }
-    .slide.active{display:block;}
+<style>
+/* ===== พื้นฐาน ===== */
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  color:#fff;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url('bg.jpg') center/cover no-repeat fixed;
+}
 
-    .content{padding:16px;}
-    .title{font-size:18px; font-weight:700; line-height:1.3; margin:0 0 10px;}
-    .sub{opacity:.85; margin:0 0 14px; font-size:14px;}
-    .btns{display:flex; flex-direction:column; gap:10px; margin-top:10px;}
-    .btn{
-      display:flex; align-items:center; justify-content:center;
-      padding:14px 16px; border-radius:14px; text-decoration:none;
-      font-weight:700; font-size:16px; border:1px solid transparent;
-    }
-    .btn-admin{background:#ffffff; color:#111;}
-    .btn-hr{background:#25D366; color:#111;} /* โทน WhatsApp */
-    .footer{opacity:.65; font-size:12px; margin-top:14px; text-align:center;}
-  </style>
+.wrap{
+  max-width:520px;
+  margin:0 auto;
+  padding:20px 14px 40px;
+}
+
+/* ===== การ์ด ===== */
+.card{
+  background:#141414;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid #222;
+  box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+/* ===== รูปบน ===== */
+.hero img{
+  width:100%;
+  display:block;
+  aspect-ratio:4/5;
+  object-fit:cover;
+}
+
+/* ===== เนื้อหา ===== */
+.content{
+  padding:16px;
+}
+
+.title{
+  font-size:18px;
+  font-weight:700;
+  margin:0 0 8px;
+}
+
+.sub{
+  font-size:14px;
+  opacity:.85;
+}
+
+/* ===== ปุ่ม ===== */
+.btns{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:16px;
+}
+
+.btn{
+  padding:14px;
+  border-radius:14px;
+  font-size:16px;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+}
+
+.btn-main{
+  background:#25D366;
+  color:#111;
+}
+
+.footer{
+  font-size:12px;
+  opacity:.6;
+  text-align:center;
+  margin-top:12px;
+}
+
+/* ===== รูปเลื่อนลง ===== */
+.gallery{
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:14px;
+  object-fit:cover;
+}
+</style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="card">
 
-      <!-- รูปสไลด์ -->
-      <div class="slider" id="slider">
-        <img src="banner1.jpg" class="slide active" alt="banner 1">
-        <img src="banner2.jpg" class="slide" alt="banner 2">
-        <img src="banner3.jpg" class="slide" alt="banner 3">
-      </div>
+<div class="wrap">
 
-      <div class="content">
-        <p class="title">สนใจสมัคร / สอบถามรายละเอียด</p>
-        <p class="sub">กดปุ่มด้านล่างเพื่อคุยกับแอดมินได้ทันที</p>
+  <div class="card">
 
-        <div class="btns">
-          <a class="btn btn-admin" href="https://wa.me/8562099810013" target="_blank" rel="noopener">
-            สมัครสมาชิกฟรี
-          </a>
-
-          <a class="btn btn-hr" href="https://wa.me/8562092311002" target="_blank" rel="noopener">
-            ติดต่อแอดมิน
-          </a>
-        </div>
-
-      
-      </div>
+    <!-- รูปหลัก -->
+    <div class="hero">
+      <img src="banner1.jpg" alt="สมัครงาน">
     </div>
+
+    <!-- เนื้อหา -->
+    <div class="content">
+      <p class="title">สมัครง่าย ไม่ซับซ้อน</p>
+      <p class="sub">ดูรายละเอียดด้านล่าง แล้วกดสมัครได้ทันที</p>
+
+      <div class="btns">
+        <a class="btn btn-main"
+           href="https://wa.me/8562098807205"
+           target="_blank">
+          สมัครเลย
+        </a>
+      </div>
+
+      <div class="footer">* กดแล้วเปิด WhatsApp</div>
+    </div>
+
   </div>
 
-  <script>
-    (function () {
-      const slides = document.querySelectorAll('.slide');
-      if (!slides || slides.length === 0) return;
+  <!-- รูปเลื่อนลง -->
+  <div class="gallery">
+    <img src="gallery1.jpg">
+    <img src="gallery2.jpg">
+    <img src="gallery3.jpg">
+  </div>
 
-      let index = 0;
-      const intervalMs = 3000; 
+</div>
 
-      setInterval(() => {
-        slides[index].classList.remove('active');
-        index = (index + 1) % slides.length;
-        slides[index].classList.add('active');
-      }, intervalMs);
-    })();
-  </script>
 </body>
 </html>
