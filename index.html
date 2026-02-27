@@ -1,142 +1,182 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>สมัคร / ติดต่อ</title>
-
-<style>
-/* ===== พื้นฐาน ===== */
-body{
-  margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto;
-  color:#fff;
-  background:
-    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-    url('bg.jpg') center/cover no-repeat fixed;
-}
-
-.wrap{
-  max-width:520px;
-  margin:0 auto;
-  padding:20px 14px 40px;
-}
-
-/* ===== การ์ด ===== */
-.card{
-  background:#141414;
-  border-radius:18px;
-  overflow:hidden;
-  border:1px solid #222;
-  box-shadow:0 10px 30px rgba(0,0,0,.5);
-}
-
-/* ===== รูปบน ===== */
-.hero img{
-  width:100%;
-  display:block;
-  aspect-ratio:4/5;
-  object-fit:cover;
-}
-
-/* ===== เนื้อหา ===== */
-.content{
-  padding:16px;
-}
-
-.title{
-  font-size:18px;
-  font-weight:700;
-  margin:0 0 8px;
-}
-
-.sub{
-  font-size:14px;
-  opacity:.85;
-}
-
-/* ===== ปุ่ม ===== */
-.btns{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  margin-top:16px;
-}
-
-.btn{
-  padding:14px;
-  border-radius:14px;
-  font-size:16px;
-  font-weight:700;
-  text-align:center;
-  text-decoration:none;
-}
-
-.btn-main{
-  background:#25D366;
-  color:#111;
-}
-
-.footer{
-  font-size:12px;
-  opacity:.6;
-  text-align:center;
-  margin-top:12px;
-}
-
-/* ===== รูปเลื่อนลง ===== */
-.gallery{
-  margin-top:20px;
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-}
-
-.gallery img{
-  width:100%;
-  border-radius:14px;
-  object-fit:cover;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join HosenX Group - We Are Hiring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            blue: '#0047b3', /* สีน้ำเงินองค์กร HosenX */
+                            dark: '#003380',
+                            red: '#e60000',
+                            redHover: '#cc0000',
+                            light: '#f0f5fa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+<body class="font-sans text-gray-800 antialiased">
 
-<body>
+    <section class="bg-brand-blue text-white pt-10 pb-20 px-6 lg:px-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex justify-between items-center mb-16">
+            <div class="text-2xl font-bold flex items-center gap-3">
+                <i class="fa-solid fa-chart-column text-3xl"></i> 
+                <span>HosenX Group</span>
+            </div>
+        </div>
 
-<div class="wrap">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 z-10">
+                <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+                    We Are Hiring – <br>Grow With HosenX
+                </h1>
+                <p class="text-lg lg:text-xl text-blue-100">
+                    A fast-growing company looking for motivated team members. Join our dynamic team and build your career with a stable industry leader.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#download" class="bg-brand-red hover:bg-brand-redHover text-white font-semibold py-3 px-8 rounded-full text-center transition shadow-lg inline-block">
+                        Download Job Application Form
+                    </a>
+                    <a href="#positions" class="border border-white hover:bg-white hover:text-brand-blue text-white font-semibold py-3 px-8 rounded-full text-center transition inline-block">
+                        View Open Positions
+                    </a>
+                </div>
+            </div>
+            <div class="hidden lg:block z-10 flex justify-end">
+                <img src="https://illustrations.popsy.co/blue/team-building.svg" alt="Team Illustration" class="w-full max-w-md opacity-90">
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
+    <section class="py-20 px-6 lg:px-20 bg-white">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h2 class="text-3xl font-bold text-brand-dark mb-4">A Stable, Growing Force</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">HosenX Group is a fully registered legal entity committed to long-term business growth and providing a secure future for our employees.</p>
+        </div>
+        
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="flex items-start gap-4 p-4">
+                <i class="fa-solid fa-file-signature text-3xl text-brand-blue"></i>
+                <div>
+                    <h3 class="font-bold text-gray-900">Legal Company</h3>
+                    <p class="text-sm text-gray-600">Fully registered and compliant.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-4">
+                <i class="fa-solid fa-building text-3xl text-brand-blue"></i>
+                <div>
+                    <h3 class="font-bold text-gray-900">Real Office</h3>
+                    <p class="text-sm text-gray-600">Professional workspace & team.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-4">
+                <i class="fa-solid fa-arrow-trend-up text-3xl text-brand-blue"></i>
+                <div>
+                    <h3 class="font-bold text-gray-900">Growing Business</h3>
+                    <p class="text-sm text-gray-600">Expanding market presence.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-4">
+                <i class="fa-solid fa-user-tie text-3xl text-brand-blue"></i>
+                <div>
+                    <h3 class="font-bold text-gray-900">Career Opportunity</h3>
+                    <p class="text-sm text-gray-600">Long-term advancement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- รูปหลัก -->
-    <div class="hero">
-      <img src="banner1.jpg" alt="สมัครงาน">
-    </div>
+    <section class="py-20 px-6 lg:px-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h2 class="text-3xl font-bold text-brand-dark mb-4">Why Work With Us</h2>
+        </div>
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center border-t-4 border-brand-blue">
+                <i class="fa-solid fa-sack-dollar text-4xl text-brand-blue mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Stable Income</h3>
+                <p class="text-gray-600 text-sm">Competitive salary and reliable payment structures.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center border-t-4 border-brand-blue">
+                <i class="fa-solid fa-users text-4xl text-brand-blue mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Friendly Environment</h3>
+                <p class="text-gray-600 text-sm">Collaborative and supportive team culture.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center border-t-4 border-brand-blue">
+                <i class="fa-solid fa-graduation-cap text-4xl text-brand-blue mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Skill Development</h3>
+                <p class="text-gray-600 text-sm">Continuous learning and professional training.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center border-t-4 border-brand-blue">
+                <i class="fa-solid fa-chart-line text-4xl text-brand-blue mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Career Growth</h3>
+                <p class="text-gray-600 text-sm">Clear paths for promotion and advancement.</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- เนื้อหา -->
-    <div class="content">
-      <p class="title">สมัครง่าย ไม่ซับซ้อน</p>
-      <p class="sub">ดูรายละเอียดด้านล่าง แล้วกดสมัครได้ทันที</p>
+    <section id="download" class="py-20 px-6 lg:px-20 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-brand-dark mb-12">Apply in 3 Simple Steps</h2>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-12 relative">
+                <div class="flex flex-col items-center z-10 bg-white px-4">
+                    <div class="w-16 h-16 rounded-full bg-brand-light text-brand-blue flex items-center justify-center text-2xl mb-4 font-bold shadow-sm">1</div>
+                    <i class="fa-solid fa-download text-2xl text-gray-700 mb-2"></i>
+                    <p class="font-semibold">Download Form</p>
+                </div>
+                <div class="flex flex-col items-center z-10 bg-white px-4">
+                    <div class="w-16 h-16 rounded-full bg-brand-light text-brand-blue flex items-center justify-center text-2xl mb-4 font-bold shadow-sm">2</div>
+                    <i class="fa-solid fa-pen-to-square text-2xl text-gray-700 mb-2"></i>
+                    <p class="font-semibold">Fill Information</p>
+                </div>
+                <div class="flex flex-col items-center z-10 bg-white px-4">
+                    <div class="w-16 h-16 rounded-full bg-brand-light text-brand-blue flex items-center justify-center text-2xl mb-4 font-bold shadow-sm">3</div>
+                    <i class="fa-solid fa-envelope text-2xl text-gray-700 mb-2"></i>
+                    <p class="font-semibold">Send via Email</p>
+                </div>
+            </div>
 
-      <div class="btns">
-        <a class="btn btn-main"
-           href="https://wa.me/8562098807205"
-           target="_blank">
-          สมัครเลย ฟรี!!
-        </a>
-      </div>
+            <a href="#" class="bg-brand-red hover:bg-brand-redHover text-white font-bold py-4 px-10 rounded-full text-lg transition shadow-xl inline-block mb-4">
+                <i class="fa-solid fa-file-pdf mr-2"></i> Download Application File (PDF)
+            </a>
+            <p class="text-sm text-gray-500"><i class="fa-solid fa-shield-halved mr-1"></i> Your information will be kept strictly confidential.</p>
+        </div>
+    </section>
 
-      <div class="footer">* กดเพื่อเปิด WhatsApp</div>
-    </div>
+    <footer class="bg-brand-dark text-white py-12 px-6 lg:px-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center border-b border-blue-800 pb-8 mb-8">
+            <div>
+                <div class="text-xl font-bold flex items-center gap-3 mb-2">
+                    <i class="fa-solid fa-chart-column"></i> HosenX Group
+                </div>
+                <p class="text-blue-200 text-sm">Company Limited</p>
+            </div>
+            
+            <div class="flex flex-col items-start md:items-center text-blue-100 text-sm gap-2">
+                <p><i class="fa-solid fa-envelope mr-2"></i> hr@hosenxgroup.com</p>
+                <p><i class="fa-solid fa-phone mr-2"></i> +856 21 123 456</p>
+            </div>
 
-  </div>
-
-  <!-- รูปเลื่อนลง -->
-  <div class="gallery">
-    <img src="gallery1.jpg">
-    <img src="gallery2.jpg">
-    <img src="gallery3.jpg">
-  </div>
-
-</div>
+            <div class="flex md:justify-end gap-4 text-xl">
+                <a href="#" class="text-blue-300 hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-blue-300 hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="text-center text-blue-400 text-sm">
+            &copy; 2026 HosenX Group Company Limited. All rights reserved.
+        </div>
+    </footer>
 
 </body>
 </html>
